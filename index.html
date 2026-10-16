@@ -11,6 +11,8 @@
 Second number? <input id="sn"> <br>
 <button onclick="add()"> + </button>
 <button onclick="subtract()"> - </button>
+<button onclick="multiplication()"> * </button>
+<button onclick="division()"> / </button>
 
 </p>
 <p>
@@ -27,6 +29,20 @@ function subtract() {
 let a = document.getElementById("fn").value;
 let b = document.getElementById("sn").value;
 let c = Number(a) - Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+function multiplication() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) * Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+function division() {
+let a = document.getElementById("fn").value;
+let b = document.getElementById("sn").value;
+let c = Number(a) / Number(b);
 document.getElementById("ans").innerHTML = c;
 }
 
